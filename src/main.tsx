@@ -17,9 +17,5 @@ render(() => {
   );
 }, rootEl);
 
-// Fetch Bing's daily bakcground image
-fetch("https://bing.biturl.top/")
-  .then((res) => res.json())
-  .then((json: { url: string }) => {
-    bgImgEl.src = json.url;
-  });
+// Use Bing's daily image
+bgImgEl.src = `https://api.dujin.org/bing/1920.php?${Date.now()}`;
