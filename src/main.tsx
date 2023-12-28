@@ -8,7 +8,14 @@ import routes from "~solid-pages";
 const rootEl = document.getElementById("root")!;
 const bgImgEl = document.getElementById("background-image") as HTMLImageElement;
 
-render(() => Router({ children: useRoutes(routes)() }), rootEl);
+render(() => {
+  const Routes = useRoutes(routes);
+  return (
+    <Router>
+      <Routes />
+    </Router>
+  );
+}, rootEl);
 
 // Fetch Bing's daily bakcground image
 fetch("https://bing.biturl.top/")
