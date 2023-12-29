@@ -7,7 +7,7 @@ const [password, setPassword] = createSignal("");
 
 function LoginForm() {
   return (
-    <div class="flex w-full flex-col items-center justify-items-center gap-2 md:w-[60%]">
+    <div class="flex h-full py-14 w-full flex-col items-center justify-items-center gap-2 md:w-[60%]">
       <p class="text-2xl">管理后台登录</p>
       <br />
       <TextInput name="用户名" type="text" valueRef={[username, setUsername]} />
@@ -16,13 +16,15 @@ function LoginForm() {
         type="password"
         valueRef={[password, setPassword]}
       />
+      <br />
+      <button class="btn btn-wide">登录</button>
     </div>
   );
 }
 
 export default function () {
   return (
-    <div class="m-auto flex h-[50vh] items-center overflow-hidden md:min-h-[20rem] md:w-[50vw] md:min-w-[35rem]">
+    <div class="m-auto flex items-center overflow-hidden md:h-[50vh] md:min-h-[20rem] md:w-[50vw] md:min-w-[35rem]">
       <img
         src={PeopleSvg}
         alt="people"
