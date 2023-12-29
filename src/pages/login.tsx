@@ -1,6 +1,7 @@
 import { createSignal } from "solid-js";
 import PeopleSvg from "../assets/people.svg";
 import TextInput from "../components/TextInput";
+import { login } from "../logic";
 
 const [username, setUsername] = createSignal("");
 const [password, setPassword] = createSignal("");
@@ -17,7 +18,12 @@ function LoginForm() {
         valueRef={[password, setPassword]}
       />
       <br />
-      <button class="btn btn-wide">登录</button>
+      <button
+        class="btn btn-wide"
+        onClick={() => login(username(), password())}
+      >
+        登录
+      </button>
     </div>
   );
 }
