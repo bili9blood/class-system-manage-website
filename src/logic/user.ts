@@ -4,7 +4,7 @@ let loginErrToastId: string = "";
 
 export function login(username: string, password: string) {
   if (loginErrToastId.length) {
-    toast.remove(loginErrToastId);
+    toast.dismiss(loginErrToastId);
     loginErrToastId = "";
   }
 
