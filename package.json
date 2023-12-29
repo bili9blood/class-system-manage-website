@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "format": "prettier --write ."
+    "dev": "vite",
+    "format": "prettier --write .",
+    "preview": "vite preview"
   },
   "dependencies": {
     "solid-js": "^1.8.7"
@@ -17,6 +17,8 @@
     "daisyui": "^4.4.24",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.8",
     "prettier-plugin-tailwindcss": "^0.5.10",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.2.2",

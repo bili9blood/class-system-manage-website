@@ -1,9 +1,9 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
 
-import "./main.css";
 import { Router, useRoutes } from "@solidjs/router";
 import routes from "~solid-pages";
+import "./main.css";
 
 const rootEl = document.getElementById("root")!;
 const bgImgEl = document.getElementById("background-image") as HTMLImageElement;
