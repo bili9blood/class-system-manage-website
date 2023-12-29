@@ -1,10 +1,9 @@
-import { createSignal } from "solid-js";
 import PeopleSvg from "../assets/people.svg";
 import TextInput from "../components/TextInput";
 import { login } from "../logic";
 
-const [username, setUsername] = createSignal("");
-const [password, setPassword] = createSignal("");
+const [username, setUsername] = $refSignal("");
+const [password, setPassword] = $refSignal("");
 
 function LoginForm() {
   return (
