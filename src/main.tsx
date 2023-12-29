@@ -18,4 +18,4 @@ render(() => {
 }, rootEl);
 
 // Use Bing's daily image
-bgImgEl.src = `https://api.dujin.org/bing/1920.php?${Date.now()}`;
+bgImgEl.src = `https://api.dujin.org/bing/1920.php?${new Date().getDay()}`;
